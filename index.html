@@ -17,10 +17,40 @@
   </div>
   <div>
     <form id="survey-form">
-      <input id="name" type="text" placeholder="Enter Your Name" required>
+      <label id="name-label">Name<input id="name" type="text" placeholder="Enter Your Name" required></label>
       
-      <input id="email" type="email" placeholder="Enter Your email" required>
-      <input  id="number" type="number" placeholder="Enter a number" min="" max="" required>
+      <label id="email-label">Email<input id="email" type="email" placeholder="Enter Your email" required></label>
+      <label  id="number-label">Age<input id="number" type="number" placeholder="Enter a number" min="10" max="99" required></label>
+      <select id="dropdown">
+        <option value="">Front-end Projects</option>
+        <option value="">Back-end Projects</option>
+        <option value="">Data Visualisation</option>
+      </select>
+      <div>
+      <label>
+        <input name="user-recommend" value="Definitely" class="input-radio" type="radio">
+        Definitely
+      </label>
+      <label>
+        <input name="user-recommend" value="Not sure" class="input-radio" type="radio">
+        Not sure
+      </label>
+      </div>
+      <div>
+        <label>
+          <input name="prefer" value="Front-end Projects" class="input-checkbox" type="checkbox">
+          Front-end Projects
+        </label>
+        <label>
+          <input name="prefer" value="Back-end Projects" class="input-checkbox" type="checkbox">
+          Back-end Projects
+        </label>
+      </div>
+      <div>
+        <p>Any comments or suggestions?</p>
+        <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+      </div>
+      <button type="submit" class="submit-button" id="submit">Submit</button>
     </form>
   </div>
    
